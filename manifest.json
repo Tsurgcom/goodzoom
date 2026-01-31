@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "GoodZoom - Auto Close Post-Attendee",
+  "version": "1.0.0",
+  "description": "Automatically closes Zoom post-attendee pages after leaving a meeting",
+  "author": "GoodZoom",
+  "homepage_url": "https://github.com/goodzoom/extension",
+  "icons": {
+    "48": "icon48.svg",
+    "128": "icon128.svg"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.svg",
+      "128": "icon128.svg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.zoom.us/postattendee*", "*://*.zoom.us/postmeeting*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["tabs"],
+  "host_permissions": [
+    "*://*.zoom.us/*"
+  ]
+}
