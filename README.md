@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/amo/v/your-addon-id?color=orange&style=flat-square" alt="Firefox Add-ons">
   </a>
   <a href="https://github.com/tsurgcom/goodzoom/blob/master/LICENSE">
-    <img src="/github/license/tsurgcom/goodzoom?color=green&style=flat-square" alt="License">
+    <img src="https://img.shields.io/github/license/tsurgcom/goodzoom?color=orange&style=flat-square" alt="License">
   </a>
 </p>
 
